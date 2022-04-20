@@ -48,6 +48,7 @@ Console.WriteLine(year);
 
 // вид метода 4
 
+/*
 string Method4(int count, string Text)
 {
     int i = 0;
@@ -58,6 +59,21 @@ string Method4(int count, string Text)
         result = result + Text;
         i++;
     }
+    return result;
+}
+string res = Method4(10, "клеим текст");
+Console.WriteLine(res);
+*/
+
+// вид метода цикла for
+
+string Method4(int count, string Text)
+{
+        string result = String.Empty;
+        for(int i = 0; i<count; i++)
+        {
+            result = result + Text;
+        }
     return result;
 }
 string res = Method4(10, "клеим текст");
